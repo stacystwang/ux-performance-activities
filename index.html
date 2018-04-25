@@ -23,18 +23,36 @@
 
   <!-- Janky Scroll-->
   <script src="assets/js/jankyscroll.js"></script>
+
+  <!-- Hotjar Tracking Code for https://github.com/stacystwang/ux-performance-acti -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:859702,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
 </head>
 
 <body>
 
   <!--  ********** HEADER SECTION ********** -->
   <div id="header">
-    <div class="row centered">
-      <img src="assets/img/header.jpg" width="100%" height="100%">
+    <div class="container-fluid">
+      <div class="row centered">
+          <h1>Measuring your sites performance</h1>
+          
+          <img class="lazy" src="assets/img/header.jpg" width="100%" height="100%">
+        </div>
+        <!--/row -->
+      </div>
+      <!--/header-->
     </div>
-    <!--/row -->
-  </div>
-  <!--/header-->
+ 
 
   <!--  ********** WHITE SECTION ********** -->
   <div id="white">
@@ -57,7 +75,7 @@
     <div class="container">
       <div class="row mt">
         <div class="col-md-6 centered">
-          <img src="assets/img/http.jpg" class="img-responsive aligncenter" width="400" alt="" data-effect="slide-left">
+          <img class="lazy" src="assets/img/http.jpg" class="img-responsive aligncenter" width="400" alt="" data-effect="slide-left">
         </div>
         <!--/col-md-6 -->
 
@@ -101,7 +119,7 @@
         </div>
         <!--/col-md-4 -->
         <div class="col-md-6 centered">
-          <img src="pic12.jpg" class="img-responsive aligncenter" width="400" alt="">
+          <img class="lazy" src="pic12.jpg" class="img-responsive aligncenter" width="400" alt="">
         </div>
         <!--/col-md-6 -->
       </div>
@@ -130,7 +148,7 @@
     <div class="container">
       <div class="row mt">
         <div class="col-md-6 centered">
-          <img src="assets/img/library.jpg" class="img-responsive aligncenter" width="400" alt="" data-effect="slide-left">
+          <img class="lazy" src="assets/img/library.jpg" class="img-responsive aligncenter" width="400" alt="" data-effect="slide-left">
         </div>
         <!--/col-md-6 -->
 
@@ -152,28 +170,28 @@
 	<div class="container">
   <div class="card-columns">
 		<div class="card">
-			<img class="card-img-top" src="assets/img/pic1.jpg" alt="Card image cap">
+			<img class="lazy" class="card-img-top" src="assets/img/pic1.jpg" alt="Card image cap">
 		</div>
 		<div class="card">
-			<img class="card-img-top" src="assets/img/pic2.jpg" alt="Card image cap">
+			<img class="lazy" class="card-img-top" src="assets/img/pic2.jpg" alt="Card image cap">
 		</div>
 		<div class="card">
-			<img class="card-img" src="assets/img/pic3.jpg" alt="Card image">
+			<img class="lazy" class="card-img" src="assets/img/pic3.jpg" alt="Card image">
 		</div>
 		<div class="card">
-			<img class="card-img" src="assets/img/pic4.jpg" alt="Card image">
+			<img class="lazy" class="card-img" src="assets/img/pic4.jpg" alt="Card image">
 		</div>
 		<div class="card">
-			<img class="card-img" src="assets/img/pic5.jpg" alt="Card image">
+			<img class="lazy" class="card-img" src="assets/img/pic5.jpg" alt="Card image">
 		</div>
 		<div class="card">
-			<img class="card-img" src="assets/img/pic6.jpg" alt="Card image">
+			<img class="lazy" class="card-img" src="assets/img/pic6.jpg" alt="Card image">
 		</div>
 		<div class="card">
-			<img class="card-img-top" src="assets/img/pic7.jpg" alt="Card image cap">
+			<img class="lazy" class="card-img-top" src="assets/img/pic7.jpg" alt="Card image cap">
 		</div>
 		<div class="card">
-			<img class="card-img-top" src="assets/img/pic8.jpg" alt="Card image cap">
+			<img class="lazy" class="card-img-top" src="assets/img/pic8.jpg" alt="Card image cap">
 		</div>
 		<div class="card">
 			<img class="card-img" src="assets/img/pic9.jpg" alt="Card image">
@@ -221,6 +239,8 @@
  
    <!-- External font libraries -->
    <script http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css rel="stylesheet"></script>
+
+   $("img.lazy").lazyload();
 
 </body>
 
